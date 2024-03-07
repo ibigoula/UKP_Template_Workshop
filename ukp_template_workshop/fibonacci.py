@@ -1,6 +1,7 @@
 class Fibonacci:
-    def __init__(self):
+    def __init__(self, n):
         self.mem = {}
+        self.n = n
 
     def fib(self, n: int) -> int:
         # fib(n) = fib(n-1) + fib(n-2)
