@@ -2,6 +2,7 @@ class Fibonacci:
     def __init__(self, n):
         self.mem = {}
         self.n = n
+        self.value = self.fib(n)
 
     def fib(self, n: int) -> int:
         # fib(n) = fib(n-1) + fib(n-2)

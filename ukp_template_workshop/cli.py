@@ -37,5 +37,5 @@ def main():  # pragma: no cover
     args = parser.parse_args()
 
     answer = Fibonacci(args.n)
-    print("Answer:", answer)
+    print("Answer:", answer.value)
     ##########################
