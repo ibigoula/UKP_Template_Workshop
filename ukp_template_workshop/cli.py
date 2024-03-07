@@ -8,10 +8,12 @@ Be creative! do whatever you want!
 - Import things from your .base module
 """
 ##### YOUR CODE HERE #####
-
+import argparse
+from ukp_template_workshop import Fibonacci
 ##########################
 
 def main():  # pragma: no cover
+
     """
     The main function executes on commands:
     `python -m ukp_template_workshop` and `$ ukp_template_workshop `.
@@ -28,5 +30,12 @@ def main():  # pragma: no cover
         * Run an application (Flask, FastAPI, Django, etc.)
     """
     ##### YOUR CODE HERE #####
-    print("This will do something")
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("n", type=int)
+
+    args = parser.parse_args()
+
+    answer = Fibonacci(args.n)
+    print("Answer:", answer)
     ##########################
